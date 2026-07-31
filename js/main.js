@@ -20,7 +20,6 @@ elements.forEach(element => {
 const dealBtn = document.querySelectorAll('.deal-button')
 dealBtn.forEach((el) => {
     el.addEventListener('click', () => {
-        alert('В данный момент для оформления заказов используется сервис KWork, Telegram, напишите мне на этих платформах и мы приступим к разработке!')
         window.open('https://t.me/WestFault?text=Здравствуйте%2C+я+хочу+заказать+услугу, ','_blank');
     })
 })
