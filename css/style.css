@@ -32,8 +32,8 @@ a {
 /* scroll */
 .animation-on-scroll  {
     opacity: 0;
-    transform: translateY(50px);
-    transition: all .4s ease-out;
+    transform: translateY(15px);
+    transition: all .3s ease-out;
 }
 
 .animation-on-scroll.show {
@@ -356,13 +356,13 @@ a {
     width: 100%;
     max-width: 500px;
     padding: 1vw; 
-    box-shadow: -10px 15px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 20px rgba(144, 22, 222, 0.2);
     transition: all .4s ease-in-out;
     text-align: center;
 }
 .deal-item:hover, .portfolio-item:hover {
-    transform: translateY(-2px) translateX(1px);
-    box-shadow: -10px 15px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0px 0px 50px rgba(144, 22, 222, 0.6);
 }
 /* section-portfolio */
 .section-portfolio {
@@ -384,18 +384,42 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 2px solid black;
     width: 100%;
     max-width: 350px;
     min-width: 275px;
-    border: 2px solid grey;
     border-radius: 2rem;
     padding: 0 1vw 1vw 1vw;
     gap: 2vh;
-    transition: all .4s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.portfolio-item:first-child {
+    border-top: 5px solid blue;
+}
+.portfolio-item:first-child:hover {
+    border: 2px solid lightblue;
+    border-top: 5px solid blue;
+    box-shadow: 0px 0px 25px lightblue;
+}
+.portfolio-item:nth-child(2) {
+    border-top: 5px solid Tomato;
+}
+.portfolio-item:nth-child(2):hover {
+    border: 2px solid orange;
+    border-top: 5px solid Tomato;
+    box-shadow: 0px 0px 25px tomato;
+}
+.portfolio-item:nth-child(3) {
+    border-top: 5px solid black;
+}
+.portfolio-item:nth-child(3):hover {
+    border: 2px solid black;
+    border-top: 5px solid black;
+    box-shadow: 0px 0px 25px black;
 }
 .portfolio-image {
     max-width: 348px;
-    min-width: 275px;
+    min-width: 273px;
     border-radius: 2rem 2rem 0 0 ;
 }
 .portfolio-name {
